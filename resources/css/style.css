@@ -1,0 +1,27 @@
+html {
+font-family: helvetica;
+font-size: 22px;
+color: seashell;
+background-color: black;
+opacity: 0.9;
+}
+
+body {
+font-family: helvetica;
+font-size: 22px;
+color: seashell;
+background-color: black;
+opacity: 0.9;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    max-height: 69px;
+    display: inline-flex;
+}
+
+header .desktop-logo {
+max-height: 50px;
+}
+
