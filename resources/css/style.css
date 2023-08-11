@@ -36,12 +36,12 @@ display: flex;
 header .fixed-header .desktop .heading-items {
 display: inline-flex;
 flex-grow: 3;
+justify-content: space-around;
 }
 
 header .fixed-header .desktop .heading-items .items {
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
 align-items: center;
 }
 
@@ -115,7 +115,7 @@ align-items: center;
 height: 100px;
 width: 25%;
     flex-direction: column;
-
+}
 
 
 #Tea-of-the-month {
