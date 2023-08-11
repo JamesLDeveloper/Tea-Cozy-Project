@@ -4,45 +4,37 @@ font-size: 22px;
 color: seashell;
 background-color: black;
 opacity: 0.9;
+text-align: center;
 }
 
 div .container {
 display: flex;
 }
 
-
-
-body {
-font-family: helvetica;
-font-size: 22px;
-color: seashell;
-background-color: black;
-opacity: 0.9;
-text-align: center;
-}
-
 header {
     position: fixed;
     z-index: 100;
-    max-height: 69px;
+    height: 69px;
     background-color: black;
     width: 100%;
 }
 
 header .fixed-header {
 display: flex;
+border-bottom: 1px solid seashell;
+justify-content: space-around;
 }
+
 
 header .fixed-header .desktop .heading-items {
 display: inline-flex;
-flex-grow: 3;
-justify-content: space-around;
 }
 
 header .fixed-header .desktop .heading-items .items {
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 align-items: center;
+
 }
 
 header .items .nav-button-logo {
@@ -50,14 +42,14 @@ display: flex;
 padding: 10px;
 height: 50px;
 width: auto;
+
 }
 
 header .items .nav-button {
 display: flex;
 padding: 10px;
+
 }
-
-
 
 header .fixed-header .desktop .heading-items .desktop-logo .img {
 max-height: 50px;
