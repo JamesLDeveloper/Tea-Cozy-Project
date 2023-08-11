@@ -7,23 +7,50 @@ opacity: 0.9;
 text-align: center;
 }
 
-div .container {
+body {
 display: flex;
 }
 
-header {
+header .fixed-header-desktop {
     position: fixed;
     z-index: 100;
     height: 69px;
     background-color: black;
     width: 100%;
+    display: flex;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-header .fixed-header {
-display: flex;
-border-bottom: 1px solid seashell;
-justify-content: space-around;
+header .logo-button-container {
 }
+
+header .logo-button-image-container {
+}
+
+header .logo-image {
+}
+
+.logo-image img {
+height: 50px;
+width: auto;
+}
+
+header .text-buttons-container {
+}
+
+header .text-button-containers {
+display: inline-flex;
+
+}
+
+header .text-button-text {
+padding: 0px 10px;
+}
+
+/*
 
 
 header .fixed-header .desktop .heading-items {
@@ -54,6 +81,9 @@ padding: 10px;
 header .fixed-header .desktop .heading-items .desktop-logo .img {
 max-height: 50px;
 }
+
+
+*/
 
 .main-content {
 position: relative;
