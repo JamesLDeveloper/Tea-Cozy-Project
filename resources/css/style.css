@@ -6,22 +6,131 @@ background-color: black;
 opacity: 0.9;
 }
 
+div .container {
+display: flex;
+}
+
+
+
 body {
 font-family: helvetica;
 font-size: 22px;
 color: seashell;
 background-color: black;
 opacity: 0.9;
+text-align: center;
 }
 
 header {
     position: fixed;
     z-index: 100;
     max-height: 69px;
-    display: inline-flex;
+    background-color: black;
+    width: 100%;
 }
 
-header .desktop-logo {
+header .fixed-header {
+display: flex;
+}
+
+header .fixed-header .desktop .heading-items {
+display: inline-flex;
+flex-grow: 3;
+}
+
+header .fixed-header .desktop .heading-items .items {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+header .items .nav-button-logo {
+display: flex;
+padding: 10px;
+height: 50px;
+width: auto;
+}
+
+header .items .nav-button {
+display: flex;
+padding: 10px;
+}
+
+
+
+header .fixed-header .desktop .heading-items .desktop-logo .img {
 max-height: 50px;
 }
 
+.main-content {
+position: relative;
+top: 69px;
+}
+
+
+.main-content .banner .content-center {
+    background-image: url("../images/img-mission-background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 1200px;
+    height: 700px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content .banner .content-center .header {
+display: flex;
+background-color: black;
+align-items: center;
+height: 100px;
+width: 100%;
+    flex-direction: column;
+}
+
+.main-content .banner .content-center .text {
+display: flex;
+background-color: black;
+align-items: center;
+height: 100px;
+width: 100%;
+    flex-direction: column;
+}
+
+.main-content .banner .content-center .email {
+display: flex;
+background-color: black;
+align-items: center;
+height: 100px;
+width: 100%;
+    flex-direction: column;
+}
+
+.main-content .banner .content-center .email .button {
+display: flex;
+background-color: black;
+align-items: center;
+height: 100px;
+width: 25%;
+    flex-direction: column;
+
+
+
+#Tea-of-the-month {
+display: flex;
+justify-content: space-between;
+}
+
+/* Need display flex (or inline-flex) here or images will not resize */
+#Tea-of-the-month .special-items .center .image-container {
+height: 200px;
+width: 300px;
+display: flex;
+}
+
+#locations .content-center {
+display: inline-flex;
+background-image: url("../images/img-locations-background.jpg");
+}
