@@ -21,7 +21,6 @@ header .fixed-header-desktop {
     border-bottom: 1px solid seashell;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header .logo-button-container {
@@ -50,103 +49,78 @@ header .text-button-text {
 padding: 0px 10px;
 }
 
-/*
-
-
-header .fixed-header .desktop .heading-items {
-display: inline-flex;
-}
-
-header .fixed-header .desktop .heading-items .items {
-display: flex;
-flex-wrap: nowrap;
-align-items: center;
-
-}
-
-header .items .nav-button-logo {
-display: flex;
-padding: 10px;
-height: 50px;
-width: auto;
-
-}
-
-header .items .nav-button {
-display: flex;
-padding: 10px;
-
-}
-
-header .fixed-header .desktop .heading-items .desktop-logo .img {
-max-height: 50px;
-}
-
-
-*/
-
 .main-content {
 position: relative;
 top: 69px;
 }
 
-
-.main-content .banner .content-center {
+.main-content .mission-banner  {
     background-image: url("../images/img-mission-background.jpg");
-    background-position: bottom;
+/*    background-position: bottom; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     width: 1200px;
     height: 700px;
     align-items: center;
-    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    }
+
+.main-content .mission-banner .header {
+background-color: black;
+width: 100%;
 }
 
-.main-content .banner .content-center .header {
+.main-content .mission-banner .text {
+background-color: black;
+width: 100%;
+}
+
+.main-content .mission-banner .email {
+background-color: black;
+width: 100%;
+}
+
+.main-content .mission-banner .email .button {
 display: flex;
 background-color: black;
 align-items: center;
 height: 100px;
 width: 100%;
-    flex-direction: column;
-}
-
-.main-content .banner .content-center .text {
-display: flex;
-background-color: black;
-align-items: center;
-height: 100px;
-width: 100%;
-    flex-direction: column;
-}
-
-.main-content .banner .content-center .email {
-display: flex;
-background-color: black;
-align-items: center;
-height: 100px;
-width: 100%;
-    flex-direction: column;
-}
-
-.main-content .banner .content-center .email .button {
-display: flex;
-background-color: black;
-align-items: center;
-height: 100px;
-width: 25%;
     flex-direction: column;
 }
 
 
 #Tea-of-the-month {
 display: flex;
-justify-content: space-between;
+justify-content: center;
 }
 
 /* Need display flex (or inline-flex) here or images will not resize */
+#Tea-of-the-month .first-line-special-items {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+column-gap: 20px;
+}
+
+#Tea-of-the-month .second-line-special-items {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+column-gap: 20px;
+}
+
 #Tea-of-the-month .special-items .center .image-container {
+justify-content: center;
+}
+
+#Tea-of-the-month .special-items .center .image-container img {
 height: 200px;
 width: 300px;
 display: flex;
@@ -155,4 +129,27 @@ display: flex;
 #locations .content-center {
 display: inline-flex;
 background-image: url("../images/img-locations-background.jpg");
+    width: 1200px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#locations .text-boxes {
+flex-wrap: wrap;
+}
+
+#locations .text-box {
+height: 300px;
+width: 300px;
+justify-content: center;
+align-items: center;
+background-color: black;
+}
+
+
+.content .copyright {
+justify-content: flex-start;
+display-flex;
 }
