@@ -56,39 +56,38 @@ top: 69px;
 
 .main-content .mission-banner  {
     background-image: url("../images/img-mission-background.jpg");
-/*    background-position: bottom; */
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: fill;
     display: flex;
     width: 1200px;
     height: 700px;
     align-items: center;
-    align-content: center;
+    align-content: space around;
     flex-wrap: wrap;
     background-color: black;
     width: 100%;
+    justify-content: center;
     }
 
 .main-content .mission-banner .header {
 background-color: black;
 width: 100%;
-}
-
-.main-content .mission-banner .text {
-background-color: black;
-width: 100%;
+height: 175px;
+align-content: flex-end;
+align-items: flex-end;
 }
 
 .main-content .mission-banner .email {
 background-color: black;
 width: 100%;
+height: 150px;
 }
 
 .main-content .mission-banner .email .button {
 display: flex;
 background-color: black;
 align-items: center;
-height: 100px;
 width: 100%;
     flex-direction: column;
 }
@@ -97,6 +96,7 @@ width: 100%;
 #Tea-of-the-month {
 display: flex;
 justify-content: center;
+padding-top: 69px;
 }
 
 /* Need display flex (or inline-flex) here or images will not resize */
@@ -126,30 +126,60 @@ width: 300px;
 display: flex;
 }
 
-#locations .content-center {
-display: inline-flex;
-background-image: url("../images/img-locations-background.jpg");
-    width: 1200px;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: contain;
+#locations {
+justify-content: center;
+display: flex;
+padding-top: 69px;
+}
 
+#locations .header {
+width: 100%;
+}
+
+#locations .content-center {
+background-image: url("../images/img-locations-background.jpg");
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
 }
 
 #locations .text-boxes {
 flex-wrap: wrap;
+display: flex;
+column-gap: 40px;
 }
 
 #locations .text-box {
-height: 300px;
+height: 250px;
 width: 300px;
 justify-content: center;
 align-items: center;
 background-color: black;
+align-text: center;
 }
 
+#contact-info .content-center {
+height: 200px;
+display: flex;
+}
 
-.content .copyright {
+footer .content {
+width: 100%;
+display: flex;
 justify-content: flex-start;
-display-flex;
+padding-left: 20px;
+}
+
+footer .content .copyright {
+width: 100%;
+display: flex;
 }
